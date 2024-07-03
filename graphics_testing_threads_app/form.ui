@@ -6,87 +6,241 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1580</width>
-    <height>480</height>
+    <width>1390</width>
+    <height>1340</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="FeedLabel">
+  <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>30</y>
-     <width>661</width>
-     <height>431</height>
+     <x>37</x>
+     <y>60</y>
+     <width>1301</width>
+     <height>1201</height>
     </rect>
    </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="stopstart1">
-   <property name="geometry">
-    <rect>
-     <x>780</x>
-     <y>100</y>
-     <width>170</width>
-     <height>48</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Stop</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBox1">
-   <property name="geometry">
-    <rect>
-     <x>780</x>
-     <y>200</y>
-     <width>451</width>
-     <height>42</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>Web-Cam</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Example 1</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Example 2</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QWidget" name="gridLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>770</x>
-     <y>280</y>
-     <width>651</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="1">
-     <widget class="QLabel" name="IP_edit_1">
-      <property name="text">
-       <string>'none'</string>
-      </property>
-     </widget>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="FeedLabel_1">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="noedit_23">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="stopstart_1">
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_1">
+          <item>
+           <property name="text">
+            <string>Web-Cam</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Example 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Example 2</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="2">
+           <widget class="QLabel" name="IP_edit_1">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="noedit">
+            <property name="text">
+             <string>IP:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="noedit_54">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="noedit">
-      <property name="text">
-       <string>IP:</string>
-      </property>
-     </widget>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="FeedLabel_2">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="noedit_09">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="stopstart_2">
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_2">
+          <item>
+           <property name="text">
+            <string>Web-Cam</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Example 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Example 2</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="2">
+           <widget class="QLabel" name="noedit_43">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="noedit_2">
+            <property name="text">
+             <string>IP:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="IP_edit_2">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="FeedLabel_3">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="stopstart_3">
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_3">
+          <item>
+           <property name="text">
+            <string>Web-Cam</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Example 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Example 2</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="2">
+           <widget class="QLabel" name="IP_edit_3">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="noedit_3">
+            <property name="text">
+             <string>IP:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
