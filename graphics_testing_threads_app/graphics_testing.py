@@ -14,8 +14,9 @@ class MainWindow(QWidget):
 
         self.cancelBTN.clicked.connect(self.CancelFeed)
 
-        self.Worker1 = Worker1()
 
+        
+        self.Worker1 = Worker1()
         self.Worker1.start()
         self.Worker1.ImageUpdate.connect(self.ImageUpdateSlot)
 

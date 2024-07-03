@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>918</width>
-    <height>1031</height>
+    <width>1580</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,25 +19,76 @@
      <x>50</x>
      <y>30</y>
      <width>661</width>
-     <height>701</height>
+     <height>431</height>
     </rect>
    </property>
    <property name="text">
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="cancelBTN">
+  <widget class="QPushButton" name="stopstart1">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>770</y>
+     <x>780</x>
+     <y>100</y>
      <width>170</width>
      <height>48</height>
     </rect>
    </property>
    <property name="text">
-    <string>Cancel</string>
+    <string>Stop</string>
    </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox1">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>200</y>
+     <width>451</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Web-Cam</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Example 1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Example 2</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>280</y>
+     <width>651</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QLabel" name="IP_edit_1">
+      <property name="text">
+       <string>'none'</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="noedit">
+      <property name="text">
+       <string>IP:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
