@@ -53,7 +53,7 @@ ENV LANG=en_US.UTF-8
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the Temperature.py file from the host to the container
+# Copy the phidget_pub.py file from the host to the container
 COPY phidget_src .
 # Now the structure looks like this '/usr/app/src/phidget_pub.py'
 
