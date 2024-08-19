@@ -1,0 +1,35 @@
+
+## TO Create Docker Container
+first go to filespace dockerfile is held in
+next build using "docker build -t my_phidget_image ."
+
+## TO Run Docker Containter
+run "docker run -it --device=/dev/bus/usb --net=host --restart=unless-stopped my_phidget_image"
+next, open a new terminal outside the container
+next do "sudo reboot"
+next check the docker is still running
+if running, exec into it and check that ros2 topics include 6 phidget publishers
+next cut power and check again that docker and ros are working
+once the docker is working consitantly, you are done
+
+
+## ABOUT
+# --device=/dev/bus/usb
+gives docker access to all usb ports (necessary for accessing phidgets no matter their port)
+see: https://stackoverflow.com/questions/24225647/docker-a-way-to-give-access-to-a-host-usb-or-serial-device
+# --net=host
+the docker container is inside the host network (lets the baystation view rostopics published by container)
+# --restart=unless-stopped
+once run, the system will run until manually turned off (will restart even if the system is powered off)
+note: must restart after starting the container to ensure it launches after poweroff
+see: https://docs.docker.com/config/containers/start-containers-automatically/
+
+## Some Basic Docker Commands
+"docker ps" #views current containers running
+"docker exec -it <container_id> bash" #opens a terminal within the docker container
+
+##ON EACH MACHINE
+do:
+export ROS_MASTER_URI=http://192.168.1.202:11311
+
+docker run -e ROS_MASTER_URI=http://192.168.1.202:11311 -e ROS_IP=<container_ip> -it 
