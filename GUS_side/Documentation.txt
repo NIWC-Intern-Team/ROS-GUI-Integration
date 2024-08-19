@@ -1,3 +1,4 @@
+##This code must be uploaded to the GUS's Jetson Nano
 
 ## TO Create Docker Container
 first go to filespace dockerfile is held in
@@ -12,7 +13,6 @@ if running, exec into it and check that ros2 topics include 6 phidget publishers
 next cut power and check again that docker and ros are working
 once the docker is working consitantly, you are done
 
-
 ## ABOUT
 # --device=/dev/bus/usb
 gives docker access to all usb ports (necessary for accessing phidgets no matter their port)
@@ -24,12 +24,15 @@ once run, the system will run until manually turned off (will restart even if th
 note: must restart after starting the container to ensure it launches after poweroff
 see: https://docs.docker.com/config/containers/start-containers-automatically/
 
+##IF ROS Topics Not Appearing
+first SSH into the Jetson
+check dockerfile is running > if not, run it
+next open terminal within docker container
+do "ros2 topic list" within the docker container > check that the topics are publishing, echo it as well
+
 ## Some Basic Docker Commands
 "docker ps" #views current containers running
 "docker exec -it <container_id> bash" #opens a terminal within the docker container
 
-##ON EACH MACHINE
-do:
-export ROS_MASTER_URI=http://192.168.1.202:11311
-
-docker run -e ROS_MASTER_URI=http://192.168.1.202:11311 -e ROS_IP=<container_ip> -it 
+##TODO
+The docker container appears to be running inconsistintly, if added to the startup script, then it will likely be resolved.
