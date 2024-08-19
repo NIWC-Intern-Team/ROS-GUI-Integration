@@ -1,0 +1,5 @@
+##This file is run on the base station side, within the same filespace as the csv files the GUI reads from
+
+#Currently this subscribes to the different phidget publishers and gps on the gus1
+#this file is intended to only handle the GUS1 subscribers, but could be added to for more subscribers
+#for more vehicles, I would recommend duplicating this file and edit necessary lines
